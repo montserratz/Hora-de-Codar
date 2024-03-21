@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área de Figuras</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+
+var escolha = prompt("Escolha qual figura geométrica deseja calcular a área, Insira um número:  \n 1)Retângulo \n 2)Quadrado \n 3)Losango \n 4)Trapézio \n 5)Paralelogramo \n 6)Triângulo \n 7)Círculo");
+
+if (escolha == 1 ){
+    Retangulo_area();
+
+}else if (escolha == 2){
+   Quadrado_area();
+
+}else if (escolha == 3){
+    Losango_area();
+
+}else if (escolha == 4){
+    Trapezio_area();
+
+}else if (escolha == 5){
+    Paralelogramo_area();
+
+}else if (escolha == 6){
+    Triangulo_area();
+
+}else if(escolha == 7){
+    Circulo_area();
+
+}
+
+
+
+
+
+function Retangulo_area() {
+
+var base = prompt("Insira a base da figura:");
+var altura = prompt("Insira a altura da figura:");
+var resultado_retangulo = base * altura;
+alert("A área do retângulo é : " + resultado_retangulo);
+
+}
+
+function Quadrado_area(){
+
+var lado1 = prompt("Insira um lado da figura:");
+var lado2 = prompt("Insira outro lado da figura:");
+var resultado_quadrado = lado1 * lado2;
+alert("A área do quadrado é : " + resultado_quadrado);
+
+
+}
+
+function Losango_area(){
+
+var diagonalMaior = prompt("Insira a diagonal maior da figura:");
+var diagonalMenor = prompt("Insira a diagonal menor da figura:");
+var resultado_losango = (diagonalMaior * diagonalMenor)/2;
+alert("A área do losango é : " + resultado_losango);
+
+
+}
+
+function Trapezio_area(){
+
+var basemaior = prompt("Insira a base maior da figura:");
+var basemenor = prompt("Insira a base menor da figura:");
+var altura = prompt("Insira a altura da figura:");
+var resultado_trapezio = ((basemaior * basemenor) * altura)/2;
+alert("A área do trapézio é : " + resultado_trapezio);
+
+}
+
+function Paralelogramo_area(){
+
+var base = prompt("Insira a base da figura:");
+var altura = prompt("Insira a altura da figura:");
+var resultado_paralelogramo = base * altura;
+alert("A área do paralelogramo é :  " + resultado_paralelogramo);
+
+
+}
+
+function  Triangulo_area(){
+
+var base = prompt("Insira a base da figura:");
+var altura = prompt("Insira a altura da figura:");
+var resultado_triangulo = (base * altura)/2;
+alert("A área do triângulo é :  " + resultado_triangulo);
+
+
+
+}
+
+function Circulo_area(){
+
+var raio = prompt("Insira o raio do círculo:");
+var resultado_circulo = (raio * raio)*3.14;
+alert("A área do círculo é :  " + resultado_circulo);
+
+
+
+}
+
+
+
+
+
+
+
+
+</script>
